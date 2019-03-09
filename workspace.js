@@ -124,7 +124,29 @@ cpdefine("inline:com-chilipeppr-workspace-grant1", ["chilipeppr_ready"], functio
 
             chilipeppr.load(
                 "#com-chilipeppr-widget-template-instance",
-                "http://raw.githubusercontent.com/chilipeppr/widget-template/master/auto-generated-widget.html",
+                "http://raw.githubusercontent.com/grantlesueur/widget-super-touchplate2/master/auto-generated-widget.html",
+                function() {
+                    // Callback after widget loaded into #myDivWidgetTemplate
+                    // Now use require.js to get reference to instantiated widget
+                    cprequire(
+                        ["inline:com-chilipeppr-widget-template-instance"], // the id you gave your widget
+                        function(myObjWidgetTemplate) {
+                            // Callback that is passed reference to the newly loaded widget
+                            console.log("Widget / Template just got loaded.", myObjWidgetTemplate);
+                            myObjWidgetTemplate.init();
+                        }
+                    );
+                }
+            );
+        },
+        /**
+         * Load the Touch Plate widget
+         */
+        loadTemplateWidget: function(callback) {
+
+            chilipeppr.load(
+                "#com-chilipeppr-Supertouchplate-instance",
+                "http://raw.githubusercontent.com/grantlesueur/widget-super-touchplate2/auto-generated-widget.html",
                 function() {
                     // Callback after widget loaded into #myDivWidgetTemplate
                     // Now use require.js to get reference to instantiated widget
