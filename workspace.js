@@ -119,12 +119,11 @@ cpdefine("inline:com-chilipeppr-workspace-grant1", ["chilipeppr_ready"], functio
         /**
          * Load the Template widget via chilipeppr.load() so folks have a sample
          * widget they can fork as a starting point for their own.
-         */
         loadTemplateWidget: function(callback) {
 
             chilipeppr.load(
                 "#com-chilipeppr-widget-template-instance",
-                "http://raw.githubusercontent.com/grantlesueur/widget-super-touchplate2/master/auto-generated-widget.html",
+                "test widget",
                 function() {
                     // Callback after widget loaded into #myDivWidgetTemplate
                     // Now use require.js to get reference to instantiated widget
@@ -139,6 +138,7 @@ cpdefine("inline:com-chilipeppr-workspace-grant1", ["chilipeppr_ready"], functio
                 }
             );
         },
+        */
         /**
          * Load the Touch Plate widget
          */
@@ -146,7 +146,8 @@ cpdefine("inline:com-chilipeppr-workspace-grant1", ["chilipeppr_ready"], functio
 
             chilipeppr.load(
                 "#com-chilipeppr-Supertouchplate",
-                "http://raw.githubusercontent.com/grantlesueur/widget-super-touchplate2/auto-generated-widget.html",
+                "http://raw.githubusercontent.com/PyroAVR/widget-super-touchplate/master/auto-generated-widget.html",
+               
                 function() {
                     // Callback after widget loaded into #myDivWidgetTemplate
                     // Now use require.js to get reference to instantiated widget
