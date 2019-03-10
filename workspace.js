@@ -142,7 +142,7 @@ cpdefine("inline:com-chilipeppr-workspace-grant1", ["chilipeppr_ready"], functio
         /**
          * Load the Touch Plate widget
          */
-        loadTouchplateWidget: function(callback) {
+        loadTemplateWidget: function(callback) {
 
             chilipeppr.load(
                 "#com-chilipeppr-Supertouchplate",
@@ -155,7 +155,7 @@ cpdefine("inline:com-chilipeppr-workspace-grant1", ["chilipeppr_ready"], functio
                         ["inline:com-chilipeppr-Supertouchplate"], // the id you gave your widget
                       function(mywidget) {
                         // Callback that is passed reference to your newly loaded widget
-                        console.log("My widget just got loaded.", mywidget);
+                        console.log("My Super touch Plate widget just got loaded.", mywidget);
                         mywidget.init();
                         }
                     );
