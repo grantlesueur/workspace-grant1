@@ -143,7 +143,20 @@ cpdefine("inline:com-chilipeppr-workspace-grant1", ["chilipeppr_ready"], functio
          * Load the Touch Plate widget
          */
         loadTemplateWidget: function(callback) {
-
+            /*chilipeppr.load(
+                "#com-chilipeppr-Supertouchplate",
+                "http://raw.githubusercontent.com/PyroAVR/widget-super-touchplate/master/auto-generated-widget.html",
+                // "http://raw.githubusercontent.com/PyroAVR/widget-super-touchplate/tabs/auto-generated-widget.html",
+                function() {
+                    require(["inline:com-chilipeppr-Supertouchplate"], function(superTouchPlate) {
+                        that.superTouchPlateInstance = superTouchPlate;
+                        console.log("superTouchPlate instantiated. superTouchPlateInstance:", that.superTouchPlateInstance);
+                        that.superTouchPlateInstance.init();
+                        //eagleInstance.activateWidget();
+                        if (callback) callback();
+                    });
+                }
+            );*/
             chilipeppr.load(
                 "#com-chilipeppr-Supertouchplate",
                 "http://raw.githubusercontent.com/PyroAVR/widget-super-touchplate/master/auto-generated-widget.html",
